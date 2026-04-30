@@ -22,7 +22,7 @@ jobs :
         run: echo "Name of the branch is ${{ github.ref_name }}"
 
       - name: list the files in the rep 
-        uses: ls -la
+        run: ls -la
 
       - name: Operating system 
         run: echo "The operating system is ${{ runner.os}}" 
